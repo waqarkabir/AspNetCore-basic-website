@@ -6,7 +6,7 @@
 
 body {
     background: var(--bg);
-    color: var(--font-color);
+    color: var(--fontColor);
     font-family: helvetica;
 }
 
@@ -20,10 +20,26 @@ li {
 
 .light-theme {
     --bg: var(--green);
-    --font-color: var(--black);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
 }
 
 .dark-theme {
     --bg: var(--black);
-    --font-color: var(--green)
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
 }
