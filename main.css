@@ -1,8 +1,12 @@
-body {
-    font-family: monospace;
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
 }
 
-ul {
+body {
+    background: var(--bg);
+    color: var(--font-color);
     font-family: helvetica;
 }
 
@@ -14,6 +18,12 @@ li {
     list-style: square;
 }
 
-#msg {
-    font-family: monospace;
+.light-theme {
+    --bg: var(--green);
+    --font-color: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --font-color: var(--green)
 }
